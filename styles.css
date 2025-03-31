@@ -61,6 +61,15 @@
   .whatsapp-float {
     animation: pulse 2s infinite;
   }
+.service-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(67, 97, 238, 0.3);
+}
 /* ===== Base Styles ===== */
 :root {
     --primary: #4361ee;
