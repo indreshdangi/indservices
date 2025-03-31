@@ -44,7 +44,14 @@
     transform: rotate(15deg);
   }
   
-  /* Pulse Animation */
+:root {
+  --primary: #4361ee;  /* Royal Blue */
+  --secondary: #3a0ca3; /* Deep Purple */
+  --accent: #f72585;   /* Electric Pink */
+  --text: #2b2d42;     /* Dark Navy */
+  --light: #f8f9fa;    /* Off-White */
+}  
+/* Pulse Animation */
   @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
