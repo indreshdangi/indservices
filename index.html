@@ -101,6 +101,132 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- Add this wherever you want the button to appear -->
+<a href="https://indreshdangi.github.io/indresh2.0" class="ai-power-button" style="margin: 20px auto; display: block; max-width: 400px;">
+  <span class="ai-power-button-text">
+    <span class="text-main">Experience Most Powerful AI</span>
+    <span class="text-sub">Visit Indresh 2.0 →</span>
+  </span>
+  <span class="ai-power-button-glow"></span>
+  <span class="ai-power-button-gradient"></span>
+</a>
+
+<!-- Add this CSS to your styles.css file or in a style tag in head -->
+<style>
+  .ai-power-button {
+    position: relative;
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: #2c3e50;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ai-power-button-text {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-main {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #fff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-sub {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+    background: linear-gradient(90deg, #b8c2cc 0%, #d1d8e0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .ai-power-button-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c);
+    background-size: 200% 200%;
+    z-index: 1;
+    border-radius: 50px;
+    animation: gradientBG 8s ease infinite;
+    opacity: 0.9;
+  }
+  
+  .ai-power-button-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    border-radius: 50px;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .ai-power-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ai-power-button:hover .ai-power-button-glow {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .ai-power-button:hover .text-sub {
+    transform: translateX(5px);
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* For smaller devices */
+  @media (max-width: 768px) {
+    .ai-power-button {
+      padding: 16px 30px;
+    }
+    .text-main {
+      font-size: 1.2rem;
+    }
+    .text-sub {
+      font-size: 0.9rem;
+    }
+  }
+</style>
     <section id="features" class="hero-bg min-h-screen flex items-center justify-center text-white pt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center fade-in">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Features</h1>
