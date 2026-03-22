@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Krishi | IND SERVICES</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'], },
+                    colors: { saffron: '#FF9933', indiaGreen: '#138808', navyBlue: '#000080', darkBg: '#0a0f1c', darkCard: '#131b2f' }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-gray-100 antialiased selection:bg-indiaGreen selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 dark:bg-[#0a0f1c]/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md">
+                        <i class="fas fa-dharmachakra text-navyBlue text-2xl"></i>
+                    </div>
+                    <h1 class="font-display font-black text-2xl tracking-wide">IND<span class="text-saffron">SERVICES</span></h1>
+                </a>
+                <div class="hidden md:flex items-center space-x-8 font-medium">
+                    <a href="index.html" class="hover:text-saffron transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-saffron transition-colors">About Us</a>
+                    <a href="agriculture.html" class="text-indiaGreen font-bold border-b-2 border-indiaGreen pb-1">Digital Krishi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-hidden bg-green-900">
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=2000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1c] to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-4 relative z-10 text-center text-white">
+            <div class="w-24 h-24 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center mx-auto mb-6 border border-white/20">
+                <i class="fas fa-leaf text-5xl text-green-400"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-black mb-4">Mission <span class="text-green-400">Digital Krishi</span></h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300">Empowering Indian Farmers with Agritech & AI</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-display font-bold mb-6 dark:text-white">Tech for the Roots of India</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">Bharat ek krishi pradhan desh hai. Humara manna hai ki agar technology ka sahi istemal kheton mein kiya jaye, toh fasal ki upaj (yield) dugni ho sakti hai aur kisan ka nuksan kam ho sakta hai.</p>
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Isi soch ke sath IND SERVICES ne <strong>Agritech</strong> solutions banana shuru kiya. Hum IoT sensors, AI chatbots, aur weather APIs ka upyog karke Smart Agriculture System develop karte hain.</p>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="bg-white dark:bg-darkCard p-6 rounded-3xl shadow-lg text-center border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-cloud-sun text-4xl text-saffron mb-4"></i>
+                    <h3 class="font-bold dark:text-white">Weather API</h3>
+                    <p class="text-sm text-gray-500">Real-time alerts</p>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-3xl shadow-lg text-center border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-robot text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold dark:text-white">Kisan Bot</h3>
+                    <p class="text-sm text-gray-500">AI in Hindi</p>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-3xl shadow-lg text-center border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-wifi text-4xl text-indiaGreen mb-4"></i>
+                    <h3 class="font-bold dark:text-white">IoT Sensors</h3>
+                    <p class="text-sm text-gray-500">Soil moisture</p>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-6 rounded-3xl shadow-lg text-center border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-chart-pie text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="font-bold dark:text-white">Data Analysis</h3>
+                    <p class="text-sm text-gray-500">Crop prediction</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="bg-gradient-to-r from-indiaGreen to-green-900 rounded-[3rem] p-12 text-center text-white shadow-2xl relative overflow-hidden">
+            <i class="fas fa-tractor text-9xl absolute -bottom-4 -left-10 opacity-20"></i>
+            <h2 class="text-4xl font-display font-black mb-4 relative z-10">Want to implement Agritech?</h2>
+            <p class="text-lg mb-8 relative z-10 max-w-2xl mx-auto">Are you an NGO, government body, or a farmer producer organization (FPO)? Contact us to build custom agriculture software.</p>
+            <a href="https://wa.me/919926739248" target="_blank" class="relative z-10 bg-white text-indiaGreen font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:bg-gray-100 hover:scale-105 transition-all">
+                <i class="fab fa-whatsapp text-2xl align-middle mr-2"></i> Message on WhatsApp
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

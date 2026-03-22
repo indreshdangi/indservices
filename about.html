@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | IND SERVICES</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'], },
+                    colors: { saffron: '#FF9933', indiaGreen: '#138808', navyBlue: '#000080', darkBg: '#0a0f1c', darkCard: '#131b2f' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.3); }
+        .dark .glass-nav { background: rgba(10, 15, 28, 0.7); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-gray-100 antialiased selection:bg-saffron selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+                    <div class="relative w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md">
+                        <i class="fas fa-dharmachakra text-navyBlue text-2xl"></i>
+                    </div>
+                    <h1 class="font-display font-black text-2xl tracking-wide">IND<span class="text-saffron">SERVICES</span></h1>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide">
+                    <a href="index.html" class="hover:text-saffron transition-colors">Home</a>
+                    <a href="about.html" class="text-saffron transition-colors font-bold">About Us</a>
+                    <a href="agriculture.html" class="hover:text-saffron transition-colors">Digital Krishi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-navyBlue to-[#0a0f1c] text-white text-center">
+        <h1 class="text-5xl md:text-6xl font-display font-black mb-4">Our Journey & Mission</h1>
+        <p class="text-xl text-gray-300">Building a Digital Bharat since 2021.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-20">
+        
+        <!-- Story Section -->
+        <section>
+            <h2 class="text-3xl font-display font-bold mb-6 border-l-4 border-saffron pl-4 dark:text-white">The IND SERVICES Story</h2>
+            <div class="bg-white dark:bg-darkCard p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-800 text-lg leading-relaxed dark:text-gray-300">
+                <p><span class="text-6xl font-display font-black text-saffron float-left mr-4 mt-2">I</span>ND SERVICES ki shuruaat <strong>2021</strong> mein ek chhote se sapne aur ek bade drishtikon (vision) ke sath hui thi. Founder Indresh Dangi ne dekha ki bade shehron mein toh technology tezi se badh rahi hai, lekin humare gaon aur chhote kasbon tak ye suvidhayein aaj bhi theek se nahi pahunch pa rahi hain.</p>
+                <br>
+                <blockquote class="border-l-4 border-indiaGreen pl-6 py-4 my-6 italic text-xl dark:text-white font-medium bg-green-50/50 dark:bg-green-900/10 rounded-r-xl">
+                    "Humara sabse bada lakshya aur sankalp hai 'Gaon-gaon tak technology pahunchana'. Chahe ek kisaan ko weather ki jankari chahiye, ya kisi chhote dukandar ko apni online dukaan banani ho—hum har kadam par sath hain."
+                </blockquote>
+                <p>Humara mool vichar Atmanirbhar Bharat ko sach karna hai. Pichle kuch saalon mein humne kai local businesses, kisaanon aur startups ko modern digital takat pradan ki hai.</p>
+            </div>
+        </section>
+
+        <!-- Founder Details -->
+        <section class="flex flex-col md:flex-row gap-10 items-center bg-gray-100 dark:bg-gray-800/50 p-10 rounded-3xl">
+            <div class="w-48 h-48 bg-gradient-to-br from-saffron to-navyBlue rounded-full p-1 shadow-2xl shrink-0">
+                <div class="w-full h-full bg-white dark:bg-darkCard rounded-full overflow-hidden flex items-center justify-center">
+                    <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-display font-black dark:text-white mb-2">Indresh Dangi</h2>
+                <p class="text-saffron font-bold uppercase tracking-widest mb-4">Founder & CEO</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-6 italic">"Technology is the bridge between a developing nation and a developed superpower. We are here to build that bridge."</p>
+                <a href="https://indreshdangi.github.io/" target="_blank" class="bg-navyBlue text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-blue-900 transition-colors">
+                    <i class="fas fa-external-link-alt mr-2"></i> Visit Full Portfolio
+                </a>
+            </div>
+        </section>
+
+        <!-- Achievements & MSME -->
+        <section>
+            <h2 class="text-3xl font-display font-bold mb-6 border-l-4 border-indiaGreen pl-4 dark:text-white">Recognitions & Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white dark:bg-darkCard p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-industry text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2 dark:text-white">MSME Registered</h3>
+                    <p class="text-sm text-gray-500">Government of India recognized enterprise.</p>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-rocket text-5xl text-indiaGreen mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2 dark:text-white">Startup India</h3>
+                    <p class="text-sm text-gray-500">Contributing to the startup ecosystem.</p>
+                </div>
+                <div class="bg-white dark:bg-darkCard p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-800">
+                    <i class="fas fa-award text-5xl text-yellow-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2 dark:text-white">ISO 9001:2015</h3>
+                    <p class="text-sm text-gray-500">Certified for quality management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Pricing Details -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Contact Box -->
+            <div class="bg-green-50 dark:bg-green-900/10 p-8 rounded-3xl border border-green-200 dark:border-green-900/30">
+                <h2 class="text-3xl font-display font-bold mb-6 text-indiaGreen">Contact Us</h2>
+                <div class="space-y-6">
+                    <a href="tel:+919926739248" class="flex items-center gap-4 bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl"><i class="fas fa-phone-alt"></i></div>
+                        <div><p class="text-sm text-gray-500">Call Us (24/7)</p><p class="font-bold text-lg dark:text-white">+91 - 9926739248</p></div>
+                    </a>
+                    <a href="https://wa.me/919926739248" target="_blank" class="flex items-center gap-4 bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl"><i class="fab fa-whatsapp"></i></div>
+                        <div><p class="text-sm text-gray-500">WhatsApp</p><p class="font-bold text-lg dark:text-white">+91 - 9926739248</p></div>
+                    </a>
+                    <div class="flex items-center gap-4 bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm">
+                        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xl"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><p class="text-sm text-gray-500">Location</p><p class="font-bold dark:text-white">India</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Pricing -->
+            <div class="bg-gray-100 dark:bg-gray-800/50 p-8 rounded-3xl border border-gray-200 dark:border-gray-700">
+                <h2 class="text-3xl font-display font-bold mb-6 dark:text-white">Our Pricing</h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Humara aim high-quality services ko affordable banana hai. Pricing requirement ke hisaab se vary kar sakti hai:</p>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm"><span class="font-bold dark:text-white">Web Development</span> <span class="text-blue-500 font-bold">Starts @ ₹4,999</span></li>
+                    <li class="flex justify-between items-center bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm"><span class="font-bold dark:text-white">App Development</span> <span class="text-saffron font-bold">Starts @ ₹9,999</span></li>
+                    <li class="flex justify-between items-center bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm"><span class="font-bold dark:text-white">Digital Marketing</span> <span class="text-purple-500 font-bold">Starts @ ₹2,999</span></li>
+                    <li class="flex justify-between items-center bg-white dark:bg-darkCard p-4 rounded-xl shadow-sm"><span class="font-bold dark:text-white">AI / ML Projects</span> <span class="text-indiaGreen font-bold">Starts @ ₹14,999</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Terms & Conditions -->
+        <section class="bg-white dark:bg-darkCard p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-800">
+            <h2 class="text-2xl font-display font-bold mb-4 dark:text-white"><i class="fas fa-file-contract text-gray-400 mr-2"></i> Terms & Conditions</h2>
+            <div class="text-sm text-gray-600 dark:text-gray-400 space-y-3">
+                <p>1. <strong>Project Advance:</strong> 50% advance payment is required to start any project.</p>
+                <p>2. <strong>Delivery Time:</strong> Timeline varies strictly according to project size. Deadlines will be discussed and agreed upon beforehand.</p>
+                <p>3. <strong>Refund Policy:</strong> Advance payments are non-refundable once the development phase has begun.</p>
+                <p>4. <strong>Support:</strong> We provide 6 months of free technical support for bugs. Additional features will be charged separately.</p>
+                <p>5. <strong>Jurisdiction:</strong> All legal disputes are subject to Indian jurisdiction.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
