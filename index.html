@@ -505,18 +505,12 @@
                         <div class="grid grid-cols-3 gap-4">
                             <div class="bg-gray-50 dark:bg-darkCard p-4 rounded-2xl border border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-award text-3xl text-yellow-500 mb-2"></i><span class="font-bold text-sm block">ISO 9001</span></div>
                             <div class="bg-gray-50 dark:bg-darkCard p-4 rounded-2xl border border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-rocket text-3xl text-indiaGreen mb-2"></i><span class="font-bold text-sm block">Startup India</span></div>
-                           <div onclick="openMSME()" 
-     class="bg-gray-50 dark:bg-darkCard p-4 rounded-2xl border border-gray-100 dark:border-gray-800 text-center cursor-pointer hover:shadow-lg transition">
-
-    <i class="fas fa-industry text-3xl text-navyBlue dark:text-blue-400 mb-2"></i>
-    <span class="font-bold text-sm block">MSME Reg.</span>
-
-</div>
+                            <div class="bg-gray-50 dark:bg-darkCard p-4 rounded-2xl border border-gray-100 dark:border-gray-800 text-center"><i class="fas fa-industry text-3xl text-navyBlue dark:text-blue-400 mb-2"></i><span class="font-bold text-sm block">MSME Reg.</span></div>
                         </div>
                     </div>
 
                     <!-- Founder Profile -->
-                   <div class="bg-white dark:bg-darkCard p-10 lg:p-14 rounded-[3rem] shadow-2xl border border-gray-100 dark:border-gray-800 text-center relative overflow-hidden">
+                    <div class="bg-white dark:bg-darkCard p-10 lg:p-14 rounded-[3rem] shadow-2xl border border-gray-100 dark:border-gray-800 text-center relative overflow-hidden">
     
     <!-- Circle with Image -->
     <div class="w-36 h-36 mx-auto bg-gradient-to-br from-saffron via-white to-indiaGreen rounded-full p-1 mb-6 shadow-xl relative z-10">
@@ -549,6 +543,7 @@
     </a>
 
 </div>
+
         <!-- Floating Action Button (WhatsApp) -->
         <a href="https://wa.me/919926739248" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_10px_30px_rgba(37,211,102,0.5)] hover:scale-110 hover:rotate-12 transition-all duration-300 z-40 animate-pulse-slow" target="_blank">
             <i class="fab fa-whatsapp"></i>
@@ -1009,42 +1004,3 @@
     </script>
 </body>
 </html>
-<!-- MSME Image Modal -->
-<div id="msmeModal" 
-     class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-
-    <!-- Close Button -->
-    <span onclick="closeMSME()" 
-          class="absolute top-6 right-8 text-white text-4xl cursor-pointer">&times;</span>
-
-    <!-- Image -->
-    <img src="msme.jpg" 
-         class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl animate-zoom">
-
-</div>
-<script>
-function openMSME() {
-    document.getElementById("msmeModal").classList.remove("hidden");
-}
-
-function closeMSME() {
-    document.getElementById("msmeModal").classList.add("hidden");
-}
-
-// Close on outside click
-document.getElementById("msmeModal").addEventListener("click", function(e) {
-    if (e.target.id === "msmeModal") {
-        closeMSME();
-    }
-});
-</script>
-<style>
-@keyframes zoomIn {
-    from { transform: scale(0.7); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-.animate-zoom {
-    animation: zoomIn 0.3s ease;
-}
-</style>
